@@ -1,0 +1,198 @@
+[
+	{
+		"Name": "Cone_Body",
+		"ComponentType": "ERocketBody",
+		"Potential": 15,
+		"Actor": "None",
+		"SpawnRate": 0.053571000000000001
+	},
+	{
+		"Name": "Icicle_Body",
+		"ComponentType": "ERocketBody",
+		"Potential": 10,
+		"Actor": "None",
+		"SpawnRate": 0.035714000000000003
+	},
+	{
+		"Name": "Driver_Body",
+		"ComponentType": "ERocketBody",
+		"Potential": 22,
+		"Actor": "None",
+		"SpawnRate": 0.053571000000000001
+	},
+	{
+		"Name": "Pyramid_Body",
+		"ComponentType": "ERocketBody",
+		"Potential": 2,
+		"Actor": "None",
+		"SpawnRate": 0.035714000000000003
+	},
+	{
+		"Name": "Rectangle_Body",
+		"ComponentType": "ERocketBody",
+		"Potential": -10,
+		"Actor": "None",
+		"SpawnRate": 0.017857000000000001
+	},
+	{
+		"Name": "Dog_Body",
+		"ComponentType": "ERocketBody",
+		"Potential": 23,
+		"Actor": "None",
+		"SpawnRate": 0.003571
+	},
+	{
+		"Name": "Shuttle_Body",
+		"ComponentType": "ERocketBody",
+		"Potential": 25,
+		"Actor": "None",
+		"SpawnRate": 0.046428999999999998
+	},
+	{
+		"Name": "Yoga_Body",
+		"ComponentType": "ERocketBody",
+		"Potential": -22,
+		"Actor": "None",
+		"SpawnRate": 0.003571
+	},
+	{
+		"Name": "Car_Engine",
+		"ComponentType": "ERocketEngine",
+		"Potential": 7,
+		"Actor": "None",
+		"SpawnRate": 0.071429000000000006
+	},
+	{
+		"Name": "Radiator_Engine",
+		"ComponentType": "ERocketEngine",
+		"Potential": 5,
+		"Actor": "None",
+		"SpawnRate": 0.017857000000000001
+	},
+	{
+		"Name": "Blender_Engine",
+		"ComponentType": "ERocketEngine",
+		"Potential": 5,
+		"Actor": "None",
+		"SpawnRate": 0.017857000000000001
+	},
+	{
+		"Name": "Motor_Engine",
+		"ComponentType": "ERocketEngine",
+		"Potential": 5,
+		"Actor": "None",
+		"SpawnRate": 0.064285999999999996
+	},
+	{
+		"Name": "Toaster_Engine",
+		"ComponentType": "ERocketEngine",
+		"Potential": 14,
+		"Actor": "None",
+		"SpawnRate": 0.003571
+	},
+	{
+		"Name": "Budai_Engine",
+		"ComponentType": "ERocketEngine",
+		"Potential": 30,
+		"Actor": "None",
+		"SpawnRate": 0.001786
+	},
+	{
+		"Name": "Fuel_Engine",
+		"ComponentType": "ERocketEngine",
+		"Potential": 26,
+		"Actor": "None",
+		"SpawnRate": 0.069642999999999997
+	},
+	{
+		"Name": "Gem_Engine",
+		"ComponentType": "ERocketEngine",
+		"Potential": -50,
+		"Actor": "None",
+		"SpawnRate": 0.003571
+	},
+	{
+		"Name": "Cone_Thruster",
+		"ComponentType": "ERocketThruster",
+		"Potential": 12,
+		"Actor": "None",
+		"SpawnRate": 0.060713999999999997
+	},
+	{
+		"Name": "Twin_Thruster",
+		"ComponentType": "ERocketThruster",
+		"Potential": 18,
+		"Actor": "None",
+		"SpawnRate": 0.060713999999999997
+	},
+	{
+		"Name": "Driver_Thruster",
+		"ComponentType": "ERocketThruster",
+		"Potential": 27,
+		"Actor": "None",
+		"SpawnRate": 0.060713999999999997
+	},
+	{
+		"Name": "Triplet_Thruster",
+		"ComponentType": "ERocketThruster",
+		"Potential": 10,
+		"Actor": "None",
+		"SpawnRate": 0.060713999999999997
+	},
+	{
+		"Name": "GUmbrella_Thruster",
+		"ComponentType": "ERocketThruster",
+		"Potential": -45,
+		"Actor": "None",
+		"SpawnRate": 0.003571
+	},
+	{
+		"Name": "Fan_Thruster",
+		"ComponentType": "ERocketThruster",
+		"Potential": 28,
+		"Actor": "None",
+		"SpawnRate": 0.003571
+	},
+	{
+		"Name": "Rounded_Fins",
+		"ComponentType": "ERocketFins",
+		"Potential": 7,
+		"Actor": "None",
+		"SpawnRate": 0.121429
+	},
+	{
+		"Name": "Sharp_Fins",
+		"ComponentType": "ERocketFins",
+		"Potential": 5,
+		"Actor": "None",
+		"SpawnRate": 0.121429
+	},
+	{
+		"Name": "C4_Fins",
+		"ComponentType": "ERocketFins",
+		"Potential": -100,
+		"Actor": "None",
+		"SpawnRate": 0.003571
+	},
+	{
+		"Name": "Witch_Fins",
+		"ComponentType": "ERocketFins",
+		"Potential": 17,
+		"Actor": "None",
+		"SpawnRate": 0.003571
+	},
+	{
+		"Name": "Cat_Fins",
+		"ComponentType": "ERocketFins",
+		"Potential": -7,
+		"Actor": "None",
+		"SpawnRate": 0.003571
+	},
+	{
+		"Name": "Board_Fins",
+		"ComponentType": "ERocketFins",
+		"Potential": 10,
+		"Actor": "None",
+		"SpawnRate": 0.003571
+	}
+]
