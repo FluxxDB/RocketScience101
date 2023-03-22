@@ -21,16 +21,16 @@
 		"SpawnRate": 0.053571000000000001
 	},
 	{
-		"Name": "Pyramid_Body",
+		"Name": "Triangle_Beam",
 		"ComponentType": "ERocketBody",
-		"Potential": 2,
+		"Potential": 15,
 		"Actor": "None",
 		"SpawnRate": 0.035714000000000003
 	},
 	{
-		"Name": "Rectangle_Body",
+		"Name": "Rectangle_Beam",
 		"ComponentType": "ERocketBody",
-		"Potential": -10,
+		"Potential": 10,
 		"Actor": "None",
 		"SpawnRate": 0.017857000000000001
 	},

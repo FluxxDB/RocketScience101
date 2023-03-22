@@ -1,9 +1,9 @@
----,Name,ComponentType,Potential,Actor,SpawnRate
+---,Name,ComponentType,Potential,Mesh,SpawnRate
 Cone_Body,"Cone Body","ERocketBody","15","None","0.053571"
 Icicle_Body,"Icicle Body","ERocketBody","10","None","0.035714"
 Driver_Body,"Driver Body","ERocketBody","22","None","0.053571"
-Pyramid_Body,"Pyramid Body","ERocketBody","2","None","0.035714"
-Rectangle_Body,"Rectangle Body","ERocketBody","-10","None","0.017857"
+Triangle_Beam,"Triangle Beam","ERocketBody","15","None","0.035714"
+Rectangle_Beam,"Rectangle Beam","ERocketBody","10","None","0.017857"
 Dog_Body,"Dog","ERocketBody","23","None","0.003571"
 Shuttle_Body,"Shuttle Body","ERocketBody","25","None","0.046429"
 Yoga_Body,"Yoga Ball Body","ERocketBody","-22","None","0.003571"

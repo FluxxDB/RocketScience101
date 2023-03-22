@@ -7,14 +7,6 @@ AComponentsHandler::AComponentsHandler()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-
-	// Loads component data table (Doesn't work?)
-
-	/*static ConstructorHelpers::FObjectFinder<UDataTable> ComponentsDataTableObject(TEXT("DataTable'/Game/Components/DT_Components.DT_Components'"));
-	if (ComponentsDataTableObject.Succeeded())
-	{
-		RocketComponentsDataTable = ComponentsDataTableObject.Object;
-	}*/
 }
 
 // Called when the game starts or when spawned
@@ -31,8 +23,8 @@ void AComponentsHandler::BeginPlay()
 	for (int i = 0; i < RocketComponents.Num(); i++)
 	{
 		const FRocketComponent* component = RocketComponentsDataTable->FindRow<FRocketComponent>(RocketComponents[i], ContextString);
-		totalWeight += component->SpawnRate;
-		componentWeightBounds.Add(totalWeight, *component);
+		totalWeight += component->SpawnRate * 100;
+		componentWeightBounds.Add(component->SpawnRate * 100, *component);
 	}
 }
 
@@ -44,21 +36,35 @@ void AComponentsHandler::Tick(float DeltaTime)
 }
 
 // Spawns a random component at a random position
-void AComponentsHandler::SpawnRandomComponent()
+FRocketComponent AComponentsHandler::SpawnRandomComponent()
 {
-	GEngine->AddOnScreenDebugMessage(-1, 3, FColor::Magenta, TEXT("aaaaaa"));
-	if (!GEngine) return;
-
-	if (!RocketComponentsDataTable) return;
+	FRocketComponent selectedComponent;
 
 	const TArray<FName> RocketComponents = RocketComponentsDataTable->GetRowNames();
 	const int RocketComponentsSize = RocketComponents.Num();
 
 	const FString& ContextString(TEXT("Rocket Component Context"));
-	const FName componentIndex = *(componentWeightBounds.Find(FMath::FRandRange(0, totalWeight)))->Name;
-	const FRocketComponent* RocketComponent = RocketComponentsDataTable->FindRow<FRocketComponent>(componentIndex, ContextString, true);
+	double randomWeight = FMath::FRandRange(0, totalWeight);
 
-	GEngine->AddOnScreenDebugMessage(-1, 3, FColor::Magenta, componentIndex.ToString());
-	GEngine->AddOnScreenDebugMessage(-1, 3, FColor::Magenta, RocketComponent->Name);
+	for (auto pair : componentWeightBounds)
+	{
+		if (randomWeight <= pair.Key)
+		{
+			selectedComponent = *componentWeightBounds.Find(pair.Key);
+			break;
+		}
+		else
+		{
+			randomWeight -= pair.Key;
+		}
+	}
+
+	GEngine->AddOnScreenDebugMessage(-1, 3, FColor::Magenta, TEXT("Spawn Random Component"));
+//	if (selectedComponent != nullptr)
+//	{
+//		GEngine->AddOnScreenDebugMessage(-1, 3, FColor::Magenta, selectedComponent->Name);
+//	}
+
+	return selectedComponent;
 }
 

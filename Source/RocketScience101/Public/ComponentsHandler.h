@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+ s// Fill out your copyright notice in the Description page of Project Settings.
 
 #pragma once
 
@@ -6,6 +6,7 @@
 #include "GameFramework/Actor.h"
 
 #include "Engine/DataTable.h"
+#include "Containers/UnrealString.h"
 #include "Containers/Array.h"
 #include "Math/UnrealMathUtility.h"
 
@@ -26,8 +27,8 @@ struct FRocketComponent : public FTableRowBase
 		int32 Potential;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly)
-		AActor* Actor;
-
+		UStaticMesh* Mesh;
+t
 	UPROPERTY(EditAnywhere, BlueprintReadOnly)
 		double SpawnRate;
 };
@@ -50,7 +51,7 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 	UFUNCTION(BlueprintCallable, Category = "Rocket Component System")
-	void SpawnRandomComponent();
+	FRocketComponent SpawnRandomComponent();
 
 	UPROPERTY(EditAnywhere);
 	class UDataTable* RocketComponentsDataTable;
